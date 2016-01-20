@@ -4,7 +4,7 @@ USER root
 RUN apk --no-cache --update add \
                                 build-base\
                                 ruby-dev
-RUN gem install fluent-plugin-webhdfs
+RUN gem install fluent-plugin-webhdfs -v 0.4.1
 USER fluent
 WORKDIR /home/fluent
 ENV PATH /home/fluent/.gem/ruby/2.2.0/bin:$PATH
