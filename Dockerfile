@@ -1,5 +1,6 @@
 FROM fluent/fluentd:latest
 MAINTAINER  markyang<youngce0918@gmail.com>
+USER root
 RUN apk --no-cache --update add \
                                 build-base\
                                 ruby-dev
