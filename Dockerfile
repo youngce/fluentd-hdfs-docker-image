@@ -1,7 +1,7 @@
 FROM fluent/fluentd:latest
 MAINTAINER  markyang<youngce0918@gmail.com>
 USER fluent
-RUN RUN apk --no-cache --update add \
+RUN apk --no-cache --update add \
 				build-base\
 				ruby-dev
 WORKDIR /home/fluent
